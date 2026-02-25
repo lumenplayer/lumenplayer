@@ -1,0 +1,33 @@
+// 20260225
+// https://raw.githubusercontent.com/lumenplayer/lumenplayer/refs/heads/main/sources.json
+
+[
+  {
+    "id": "480B8728-240D-481C-82D4-BBFEE3006D2F",
+    "top": true,
+    "priority": 100,
+    "note": "要求大陸 IP",
+    "search": true,
+    "name": "豆瓣精选",
+    "api": "lumen://https://raw.githubusercontent.com/lumenplayer/lumenplugin/main/douban/config.json"
+  },
+  {
+    "id": "0A3B9F59-CDBD-434C-8361-FEE37F797D61",
+    "top": false,
+    "priority": 1002,
+    "note": "海外 IP 無廣告",
+    "search": true,
+    "name": "新歐樂影院",
+    "cover": "https://i.ibb.co/TK0pFjL/image.png",
+    "api": "lumen://https://raw.githubusercontent.com/lumenplayer/lumenplugin/main/olevod/config.json"
+  },
+  {
+    "id": "4047BF8A-3FE8-4349-B82D-A4620B55E7C8",
+    "top": true,
+    "priority": 1001,
+    "note": "無貼片，插入式廣告",
+    "search": true,
+    "name": "量子資源",
+    "api": "https://cj.lziapi.com/api.php/provide/vod/from/lzm3u8/at/xml/"
+  },
+]
