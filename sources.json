@@ -7,9 +7,10 @@
     "top": true,
     "priority": 100,
     "note": "要求大陸 IP",
-    "search": true,
+    "search": false,
     "name": "豆瓣精选",
-    "api": "lumen://https://raw.githubusercontent.com/lumenplayer/lumenplugin/main/douban/config.json"
+    "api": "lumen://https://raw.githubusercontent.com/lumenplayer/lumenplugin/main/douban/config.json",
+    "type": "theme"
   },
   {
     "id": "0A3B9F59-CDBD-434C-8361-FEE37F797D61",
