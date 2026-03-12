@@ -1,0 +1,11 @@
+[
+  {
+    "id": "BDB4E902-91FE-4021-B10E-6179023EEB4E",
+    "top": true,
+    "priority": 10000,
+    "note": "高清1080P",
+    "search": true,
+    "name": "JAV在线",
+    "api": "lumen://https://raw.githubusercontent.com/lumenplayer/lumenplugin/main/jable/config.json",
+  }
+]

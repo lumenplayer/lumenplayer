@@ -1,12 +1,9 @@
-// 20260225
-// https://raw.githubusercontent.com/lumenplayer/lumenplayer/refs/heads/main/sources.json
-
 [
   {
     "id": "480B8728-240D-481C-82D4-BBFEE3006D2F",
     "top": true,
     "priority": 100,
-    "note": "要求大陸 IP",
+    "note": "仅包含主题",
     "search": false,
     "name": "豆瓣精选",
     "api": "lumen://https://raw.githubusercontent.com/lumenplayer/lumenplugin/main/douban/config.json",
