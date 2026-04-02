@@ -80,7 +80,7 @@ Once added, the app will automatically load the video source. The sidebar displa
 ## 📚 Documentation
 
 - 📘 [macOS User Guide](macos-guide.md) — Detailed instructions for each page
-- 🔌 [Plugin Development Guide](https://github.com/user/lumenplayer-plugin) — LumenPlugin developer documentation
+- 🔌 [Plugin Development Guide](https://github.com/lumenplayer/lumenplugin/blob/main/development-guide-en.md) — LumenPlugin developer documentation
 
 ---
 
