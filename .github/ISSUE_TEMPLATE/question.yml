@@ -7,8 +7,7 @@ body:
     attributes:
       value: |
         在提問之前，請先查看：
-        - [使用文件和常見問題](https://github.com/lumenplayer/lumenplayer/blob/main/website/README.md)
-        - [訂閱源說明](https://github.com/lumenplayer/lumenplayer/blob/main/website/sources.md)
+        - [使用文件和常見問題](https://github.com/lumenplayer/lumenplayer/blob/main/README.md)
         - [Telegram 社群](https://t.me/lumenplayer) — 適合快速提問和討論
 
   - type: textarea
