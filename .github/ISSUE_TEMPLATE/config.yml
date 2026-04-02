@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Telegram 社群
+    url: https://t.me/lumenplayer
+    about: 加入 Telegram 頻道討論問題、分享訂閱源和獲取最新動態
+  - name: 📖 使用文件
+    url: https://github.com/lumenplayer/lumenplayer/blob/main/website/README.md
+    about: 查看 Lumen Player 使用指南和常見問題解答

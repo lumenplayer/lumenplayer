@@ -1,0 +1,97 @@
+name: ✨ 功能建議
+description: 提出新功能或改進建議
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝你提出功能建議！請詳細描述你的想法，這將幫助我們更好地規劃 Lumen Player 的未來發展。
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 🎯 功能描述
+      description: 請清晰簡潔地描述你希望新增的功能。
+      placeholder: 描述你想要的功能...
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: 💡 使用場景
+      description: 描述你在什麼場景下需要這個功能，它能解決什麼問題？
+      placeholder: |
+        當我在使用 Lumen Player 時，我需要 ...
+        因為 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 🛠 期望方案
+      description: 描述你期望這個功能如何實現或運作。
+      placeholder: 描述你理想中的實現方式...
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 替代方案
+      description: 你是否考慮過其他替代方案來解決這個問題？
+      placeholder: 描述你想到的替代方案...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 📱 目標平台
+      description: 這個功能你希望在哪些平台上實現？
+      options:
+        - 所有平台
+        - macOS
+        - Apple TV (tvOS)
+        - iPhone (iOS)
+        - iPad (iPadOS)
+      multiple: true
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 📂 功能分類
+      description: 這個功能屬於哪個類別？
+      options:
+        - 播放器
+        - 使用者介面 / 互動
+        - 搜尋 / 瀏覽
+        - 影片源 / 外掛
+        - iCloud 同步
+        - 設定 / 組態
+        - 效能最佳化
+        - 其他
+    validations:
+      required: false
+
+  - type: textarea
+    id: mockup
+    attributes:
+      label: 🎨 設計參考
+      description: 如果有設計參考、截圖或 mockup，請在此附上。
+      placeholder: 拖曳圖片到此處或描述你想像中的介面...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✔️ 提交前確認
+      description: 提交前請確認以下內容
+      options:
+        - label: 我已搜尋現有 Issues，確認沒有重複的建議
+          required: true

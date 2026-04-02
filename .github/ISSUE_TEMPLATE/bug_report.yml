@@ -1,0 +1,155 @@
+name: 🐛 Bug 回報
+description: 提交一個 Bug 回報來幫助我們改進 Lumen Player
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝你花時間提交 Bug 回報！請盡可能詳細地填寫以下資訊，這將幫助我們更快定位和修復問題。
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 🐛 問題描述
+      description: 請清晰簡潔地描述你遇到的 Bug。
+      placeholder: 描述你遇到的問題...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔁 重現步驟
+      description: 請列出可以重現該問題的詳細步驟。
+      placeholder: |
+        1. 開啟應用程式
+        2. 進入 '...' 頁面
+        3. 點擊 '...' 按鈕
+        4. 看到錯誤 / 異常行為
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ 預期行為
+      description: 你期望應用程式應該如何表現？
+      placeholder: 描述你期望看到的正確行為...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ 實際行為
+      description: 應用程式實際上是怎麼表現的？
+      placeholder: 描述你實際看到的行為...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 📱 執行平台
+      description: 你在哪個平台上遇到了這個問題？
+      options:
+        - macOS
+        - Apple TV (tvOS)
+        - iPhone (iOS)
+        - iPad (iPadOS)
+      multiple: true
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: 💻 系統版本
+      description: 你的作業系統版本號
+      placeholder: "例如：macOS 15.4 / tvOS 18.4 / iOS 18.4"
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: 📦 應用程式版本
+      description: Lumen Player 的版本號（可在設定頁面底部查看）
+      placeholder: "例如：1.0.0 (Build 1)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source-type
+    attributes:
+      label: 🔌 影片源類型
+      description: 問題相關的影片源類型（如果與影片源有關）
+      options:
+        - 不確定 / 不相關
+        - LumenPlugin 外掛源
+        - MacCMS 直連 API
+        - JS Spider 爬蟲源
+      multiple: false
+    validations:
+      required: false
+
+  - type: textarea
+    id: source-info
+    attributes:
+      label: 📡 影片源資訊
+      description: 如果問題與特定影片源有關，請提供相關資訊（訂閱源名稱、URL 等）。請勿在此處貼上密碼或隱私資訊。
+      placeholder: |
+        訂閱源名稱：xxx
+        來源：口令 / URL 匯入
+        問題站點：xxx
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📋 日誌 / 截圖 / 錄影
+      description: |
+        如果可以，請提供以下資訊幫助排查：
+        - 截圖或螢幕錄影
+        - Xcode Console 日誌（搜尋 `[LumenDebug]`、`[JsSpider]`、`[LumenPlugin]` 等前綴）
+        - 系統 Console.app 中的相關日誌
+      placeholder: 貼上日誌或拖曳截圖到此處...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: 🔄 問題頻率
+      description: 這個問題多久出現一次？
+      options:
+        - 每次都會出現
+        - 經常出現（>50%）
+        - 偶爾出現（<50%）
+        - 只出現過一次
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 💡 附加資訊
+      description: 你覺得有助於定位問題的其他任何資訊（如網路環境、代理設定、iCloud 同步狀態等）。
+      placeholder: 其他相關資訊...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✔️ 提交前確認
+      description: 提交前請確認以下內容
+      options:
+        - label: 我已搜尋現有 Issues，確認沒有重複的回報
+          required: true
+        - label: 我已更新到最新版本的 Lumen Player
+          required: false
+        - label: 我已查閱 [常見問題](https://github.com/lumenplayer/lumenplayer/blob/main/website/README.md#-常見問題) 但未找到解決方案
+          required: false

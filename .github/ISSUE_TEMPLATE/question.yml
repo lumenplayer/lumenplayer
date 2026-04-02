@@ -1,0 +1,83 @@
+name: ❓ 問題諮詢
+description: 關於 Lumen Player 使用方面的問題
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        在提問之前，請先查看：
+        - [使用文件和常見問題](https://github.com/lumenplayer/lumenplayer/blob/main/website/README.md)
+        - [訂閱源說明](https://github.com/lumenplayer/lumenplayer/blob/main/website/sources.md)
+        - [Telegram 社群](https://t.me/lumenplayer) — 適合快速提問和討論
+
+  - type: textarea
+    id: question
+    attributes:
+      label: ❓ 問題描述
+      description: 請清楚地描述你的問題。
+      placeholder: 描述你想問的問題...
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: 🔍 已嘗試的方法
+      description: 你已經嘗試了哪些方法來解決這個問題？
+      placeholder: |
+        1. 我嘗試了 ...
+        2. 我查閱了 ...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 📱 使用平台
+      description: 你在哪個平台上遇到問題？
+      options:
+        - macOS
+        - Apple TV (tvOS)
+        - iPhone (iOS)
+        - iPad (iPadOS)
+    validations:
+      required: false
+
+  - type: input
+    id: os-version
+    attributes:
+      label: 💻 系統版本
+      description: 你的作業系統版本號（如果與問題相關）
+      placeholder: "例如：macOS 15.4"
+    validations:
+      required: false
+
+  - type: input
+    id: app-version
+    attributes:
+      label: 📦 應用程式版本
+      description: Lumen Player 的版本號（如果與問題相關）
+      placeholder: "例如：1.0.0 (Build 1)"
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📋 截圖 / 錄影
+      description: 如果能幫助說明問題，請附上截圖或螢幕錄影。
+      placeholder: 拖曳截圖到此處...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✔️ 提交前確認
+      description: 提交前請確認以下內容
+      options:
+        - label: 我已查閱使用文件和常見問題
+          required: true
+        - label: 我已搜尋現有 Issues，確認沒有重複的問題
+          required: true
